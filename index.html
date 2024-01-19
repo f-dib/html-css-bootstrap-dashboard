@@ -24,7 +24,15 @@
     <header class="container-fluid">
         
         <nav class="row">
-
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand">Navbar</a>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2 flex-grow-1" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
         </nav>
     
     </header>
@@ -34,11 +42,15 @@
         
         <section class="row">
             
-            <aside class="col-1">
+            <aside class="d-flex flex-column ms_aside p-0">
+
+                <div>
+
+                </div>
 
             </aside>
 
-            <section class="col-11 ms_scroll">
+            <section class="d-flex flex-column ms_scroll">
 
                 <!-- blue section -->
                 <div class="ms_blue row">

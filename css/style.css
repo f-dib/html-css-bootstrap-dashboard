@@ -6,12 +6,15 @@ nav {
     background-color: aqua;
 }
 
-aside {
+.ms_aside {
+    width: 70px;
     height: calc(100vh - 75px);
     background-color: blue;
 }
 
 .ms_scroll{
+    width: calc(100vw - 70px);
+
     overflow-y: auto;
 }
 
@@ -25,13 +28,22 @@ aside {
 }
 
 .ms_card {
-    height: 300px;
+    height: 322px;
 
     background-color: chocolate;
 }
 
 
 * {
-    border: .1px solid yellowgreen;
+    /* border: .1px solid yellowgreen; */
 }
 
+@media screen and (min-width: 992px){ 
+    .ms_aside {
+        width: 150px;
+    }
+    
+    .ms_scroll{
+        width: calc(100vw - 150px);
+    }
+}
