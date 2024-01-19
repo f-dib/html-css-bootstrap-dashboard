@@ -3,23 +3,21 @@
 ************************************************/
 nav {
     height: 75px;
-    background-color: aqua;
 }
 
 .ms_mobile_logo {
-    width: 50px;
+    width: 40px;
 }
 
 .fa-bell {
     color: #ff8f00;
 }
 
-
-
 .ms_aside {
     width: 70px;
     height: calc(100vh - 75px);
-    background-color: blue;
+    background-color: #051e34;
+    background-image: url("../img/sidebar-bg.png");
 }
 
 .ms_scroll{
