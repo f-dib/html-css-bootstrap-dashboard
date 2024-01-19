@@ -28,17 +28,10 @@ nav {
 
 .ms_blue{
     height: 115px;
-    background-color: beige;
 }
 
 .ms_cards {
     height: calc(100vh - 190px);
-}
-
-.ms_card {
-    height: 322px;
-
-    background-color: chocolate;
 }
 
 /************************************************
