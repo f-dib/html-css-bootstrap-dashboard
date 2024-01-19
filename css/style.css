@@ -6,9 +6,15 @@ nav {
     background-color: aqua;
 }
 
+.ms_mobile_logo {
+    width: 50px;
+}
+
 .fa-bell {
     color: #ff8f00;
 }
+
+
 
 .ms_aside {
     width: 70px;
