@@ -24,13 +24,22 @@
     <header class="container-fluid">
         
         <nav class="row">
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand">Navbar</a>
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2 flex-grow-1" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid flex-nowrap">
+                  <a class="navbar-brand"><img class="d-none d-lg-block" src="./img/logo.svg" alt=""></a>
+                  
+                  <form class="d-flex flex-grow-1" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   </form>
+
+                  <div class="d-none d-lg-block">
+                    <button type="button" class="btn"><i class="fa-solid fa-list"></i></button>
+                    <button type="button" class="btn"><i class="fa-solid fa-circle-question"></i></button>
+                    <button type="button" class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                  </div>
+
+                  <button type="button" class="btn"><i class="fa-solid fa-bell"></i></button>
+                    
                 </div>
               </nav>
         </nav>

@@ -6,6 +6,10 @@ nav {
     background-color: aqua;
 }
 
+.fa-bell {
+    color: #ff8f00;
+}
+
 .ms_aside {
     width: 70px;
     height: calc(100vh - 75px);
@@ -33,10 +37,9 @@ nav {
     background-color: chocolate;
 }
 
-
-* {
-    /* border: .1px solid yellowgreen; */
-}
+/************************************************
+    RESPONSIVE
+************************************************/
 
 @media screen and (min-width: 992px){ 
     .ms_aside {
