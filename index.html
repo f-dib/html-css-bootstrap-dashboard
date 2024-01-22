@@ -49,11 +49,11 @@
     </header>
 
 
-    <main class="container-fluid flex-nowrap">
+    <main class="container-fluid p-0">
         
-        <section class="row">
+        <section class="d-flex">
             
-            <aside class="ms_aside d-flex flex-column p-0 py-4 justify-content-between align-items-center text-white text-center text-lg-start ">
+            <aside class="ms_aside d-flex flex-column py-4 justify-content-between align-items-center text-white text-center text-lg-start">
 
                 <div>
                    <div class="mb-2"><i class="fa-solid fa-house"></i> <span class="d-none d-lg-inline-block px-2">Home</span></div>
@@ -67,21 +67,53 @@
 
             </aside>
 
-            <section class="d-flex flex-column ms_scroll">
+            <section class="container-fluid flex-column ms_scroll">
 
                 <!-- blue section -->
-                <div class="ms_blue bg-primary row">
+                <div class="bg-primary row text-white py-3">
                     
-                    <div class="col-12 col-md-4 col-lg-6">
-
+                    <div class="col-12 col-md-4 col-lg-6 order-1">
+                      <div class="d-flex gap-1">
+                        <h3>Boolean</h3>
+                        <div class="align-self-center">
+                          <button type="button" class="btn ms_btn p-0 px-2 rounded-5 ">Piano blaze</button>
+                        </div>
+                      </div>
+                      <div>
+                        <section style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><button type="button" class="btn ms_btn p-0 px-2 rounded-5 ">3 app</button></a></li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                              <div class="d-flex">
+                                <div class="d-flex gap-1 d-none d-lg-flex">
+                                  <div><button type="button" class="btn ms_btn p-0 px-2 rounded-5">Boolean mobile app</button></div>
+                                  <div><button type="button" class="btn ms_btn p-0 px-2 rounded-5">Boolean web app</button></div>
+                                  <div><button type="button" class="btn ms_btn p-0 px-2 rounded-5">Boolean blog app</button></div>
+                                </div>
+                                <div class="d-lg-none">
+                                  <div><button type="button" class="btn ms_btn p-0 px-2 rounded-5 ">+</button></div>
+                                </div>
+                              </div>
+                            </li>
+                          </ol>
+                        </section>
+                      </div>
                     </div>
 
-                    <div class="col-12 col-md-4 col-lg-3">
-
+                    <div class="col-12 col-md-4 col-lg-3 order-2">
+                      <div>
+                        <span>Studenti online negli ultimi 30 minuti</span>
+                      </div>
+                      <div>
+                        <span class="fs-2">125</span>
+                      </div>
                     </div>
 
-                    <div class="col-12 col-md-4 col-lg-3">
-
+                    <div class="col-12 col-md-4 col-lg-3 order-0 order-md-3 mb-3 mb-md-0">
+                      <div class="d-flex gap-2">
+                        <div class="align-self-center">Nuovo studente</div>
+                        <div><button type="button" class="btn btn-outline-light">+</button></div>
+                      </div>
                     </div>
 
                 </div>
@@ -103,7 +135,7 @@
                                           <tr>
                                           <th scope="col" class="col-lg-7 fw-normal small">Nome</th>
                                           <th scope="col" class="fw-normal small d-none d-md-table-cell text-center">Data inizio</th>
-                                          <th scope="col" class="fw-normal small d-none d-md-table-cell">ROI</th>
+                                          <th scope="col" class="fw-normal small d-none d-md-table-cell text-center">ROI</th>
                                           <th scope="col" class="fw-normal small text-center">Stato</th>
                                           <th scope="col" class="fw-normal small text-center">Azioni</th>
                                           </tr>
@@ -111,15 +143,15 @@
                                       <tbody>
                                           <tr>
                                           <th class="fw-normal" scope="row"><img class="rounded-circle ms_code me-2" src="./img/class-avatar.jpg" alt="">Classe 75</th>
-                                          <td  class="text-center">15 Feb 2021</td>
-                                          <td>20%</td>
-                                          <td><div class="bg-success small text-center text-white rounded-3 w-75 m-auto">Done</div></td>
+                                          <td  class="text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                          <td class="text-center d-none d-md-table-cell">20%</td>
+                                          <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                                           <td>
-                                            <div class="row justify-content-center">
-                                              <div class="col-4">
+                                            <div class="d-flex justify-content-center gap-2">
+                                              <div>
                                                 <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-pen"></i></button>
                                               </div>
-                                              <div class="col-4">
+                                              <div>
                                                 <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-trash"></i></button>
                                               </div>
                                             </div>
@@ -127,15 +159,15 @@
                                           </tr>
                                           <tr>
                                             <th class="fw-normal" scope="row"><img class="rounded-circle ms_code me-2" src="./img/class-avatar.jpg" alt="">Classe 76</th>
-                                            <td  class="text-center">16 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><div class="bg-success small text-center text-white rounded-3 w-75 m-auto">Done</div></td>
+                                            <td  class="text-center d-none d-md-table-cell">16 Feb 2021</td>
+                                            <td class="text-center d-none d-md-table-cell">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                                             <td>
-                                              <div class="row justify-content-center">
-                                                <div class="col-4">
+                                              <div class="d-flex justify-content-center gap-2">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-pen"></i></button>
                                                 </div>
-                                                <div class="col-4">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-trash"></i></button>
                                                 </div>
                                               </div>
@@ -143,15 +175,15 @@
                                           </tr>
                                           <tr>
                                             <th class="fw-normal" scope="row"><img class="rounded-circle ms_code me-2" src="./img/class-avatar.jpg" alt="">Classe 77</th>
-                                            <td  class="text-center">17 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><div class="bg-warning small text-center text-white rounded-3 w-75 m-auto">Process</div></td>
+                                            <td  class="text-center d-none d-md-table-cell">17 Feb 2021</td>
+                                            <td class="text-center d-none d-md-table-cell">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-warning">Process</span></td>
                                             <td>
-                                              <div class="row justify-content-center">
-                                                <div class="col-4">
+                                              <div class="d-flex justify-content-center gap-2">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-pen"></i></button>
                                                 </div>
-                                                <div class="col-4">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-trash"></i></button>
                                                 </div>
                                               </div>
@@ -159,15 +191,15 @@
                                           </tr>
                                           <tr>
                                             <th class="fw-normal" scope="row"><img class="rounded-circle ms_code me-2" src="./img/class-avatar.jpg" alt="">Classe 78</th>
-                                            <td  class="text-center">18 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><div class="bg-success small text-center text-white rounded-3 w-75 m-auto">Done</div></td>
+                                            <td  class="text-center d-none d-md-table-cell">18 Feb 2021</td>
+                                            <td class="text-center d-none d-md-table-cell">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                                             <td>
-                                              <div class="row justify-content-center">
-                                                <div class="col-4">
+                                              <div class="d-flex justify-content-center gap-2">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-pen"></i></button>
                                                 </div>
-                                                <div class="col-4">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-trash"></i></button>
                                                 </div>
                                               </div>
@@ -175,15 +207,15 @@
                                           </tr>
                                           <tr>
                                             <th class="fw-normal" scope="row"><img class="rounded-circle ms_code me-2" src="./img/class-avatar.jpg" alt="">Classe 79</th>
-                                            <td  class="text-center">19 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><div class="bg-danger small text-center text-white rounded-3 w-75 m-auto">Failed</div></td>
+                                            <td  class="text-center d-none d-md-table-cell">19 Feb 2021</td>
+                                            <td class="text-center d-none d-md-table-cell">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
                                             <td>
-                                              <div class="row justify-content-center">
-                                                <div class="col-4">
+                                              <div class="d-flex justify-content-center gap-2">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-pen"></i></button>
                                                 </div>
-                                                <div class="col-4">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-trash"></i></button>
                                                 </div>
                                               </div>
@@ -191,15 +223,15 @@
                                           </tr>
                                           <tr>
                                             <th class="fw-normal" scope="row"><img class="rounded-circle ms_code me-2" src="./img/class-avatar.jpg" alt="">Classe 80</th>
-                                            <td  class="text-center">20 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><div class="bg-success small text-center text-white rounded-3 w-75 m-auto">Done</div></td>
+                                            <td  class="text-center d-none d-md-table-cell">20 Feb 2021</td>
+                                            <td class="text-center d-none d-md-table-cell">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                                             <td>
-                                              <div class="row justify-content-center">
-                                                <div class="col-4">
+                                              <div class="d-flex justify-content-center gap-2">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-pen"></i></button>
                                                 </div>
-                                                <div class="col-4">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-trash"></i></button>
                                                 </div>
                                               </div>
@@ -207,15 +239,15 @@
                                           </tr>
                                           <tr>
                                             <th class="fw-normal" scope="row"><img class="rounded-circle ms_code me-2" src="./img/class-avatar.jpg" alt="">Classe 81</th>
-                                            <td class="text-center">21 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><div class="bg-danger small text-center text-white rounded-3 w-75 m-auto">Failed</div></td>
+                                            <td class="text-center d-none d-md-table-cell">21 Feb 2021</td>
+                                            <td class="text-center d-none d-md-table-cell">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
                                             <td>
-                                              <div class="row justify-content-center">
-                                                <div class="col-4">
+                                              <div class="d-flex justify-content-center gap-2">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-pen"></i></button>
                                                 </div>
-                                                <div class="col-4">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-trash"></i></button>
                                                 </div>
                                               </div>
@@ -223,15 +255,15 @@
                                           </tr>
                                           <tr>
                                             <th class="fw-normal" scope="row"><img class="rounded-circle ms_code me-2" src="./img/class-avatar.jpg" alt="">Classe 82</th>
-                                            <td  class="text-center">22 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><div class="bg-success small text-center text-white rounded-3 w-75 m-auto">Done</div></td>
+                                            <td  class="text-center d-none d-md-table-cell">22 Feb 2021</td>
+                                            <td class="text-center d-none d-md-table-cell">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                                             <td>
-                                              <div class="row justify-content-center">
-                                                <div class="col-4">
+                                              <div class="d-flex justify-content-center gap-2">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-pen"></i></button>
                                                 </div>
-                                                <div class="col-4">
+                                                <div>
                                                   <button type="button" class="btn btn-outline-secondary p-1"><i class="fa-solid fa-trash"></i></button>
                                                 </div>
                                               </div>

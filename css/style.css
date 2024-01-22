@@ -1,6 +1,10 @@
 /************************************************
     UTILITIES
 ************************************************/
+body{
+    overflow-y: hidden;
+}
+
 nav {
     height: 75px;
 }
@@ -26,8 +30,10 @@ nav {
     overflow-y: auto;
 }
 
-.ms_blue{
-    height: 115px;
+.ms_btn {
+    background-color: #165bba;
+    color: white;
+    font-size: 13px;
 }
 
 .ms_cards {
