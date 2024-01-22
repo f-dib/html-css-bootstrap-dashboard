@@ -31,8 +31,9 @@
                       <div class="ms_mobile_logo d-lg-none"><img class="img-fluid" src="./img/mobile-logo.png" alt=""></div>  
                   </a>
                   
-                  <form class="d-flex flex-grow-1" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <form class="d-flex flex-grow-1 position-relative" role="search">
+                    <input class="form-control me-2 bg-secondary-subtle ps-4 " type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                    <div class="position-absolute top-50 start-0 translate-middle-y px-1 "><i class="fa-solid fa-magnifying-glass text-secondary"></i></div>
                   </form>
 
                   <div class="d-none d-lg-block">
@@ -41,8 +42,17 @@
                     <button type="button" class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                   </div>
 
-                  <button type="button" class="btn"><i class="fa-solid fa-bell"></i></button>
-                    
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">Profilo</button></li>
+                      <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                      <li><button class="dropdown-item" type="button">Logout</button></li>
+                    </ul>
+                  </div>
+
                 </div>
               </nav>
     
@@ -133,7 +143,7 @@
                                   <table class="table table-hover">
                                       <thead>
                                           <tr>
-                                          <th scope="col" class="col-lg-7 fw-normal small">Nome</th>
+                                          <th scope="col" class="col-md-5 col-lg-4 col-xxl-7 fw-normal small">Nome</th>
                                           <th scope="col" class="fw-normal small d-none d-md-table-cell text-center">Data inizio</th>
                                           <th scope="col" class="fw-normal small d-none d-md-table-cell text-center">ROI</th>
                                           <th scope="col" class="fw-normal small text-center">Stato</th>
