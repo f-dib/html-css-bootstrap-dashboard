@@ -1,7 +1,7 @@
 /************************************************
     UTILITIES
 ************************************************/
-body{
+body {
     overflow-y: hidden;
 }
 
@@ -20,24 +20,34 @@ nav {
 .ms_aside {
     width: 70px;
     height: calc(100vh - 75px);
+    
     background-color: #051e34;
     background-image: url("../img/sidebar-bg.png");
 }
 
-.ms_scroll{
+.ms_hover:hover {
+    background-color: gray;
+}
+
+.ms_scroll {
     width: calc(100vw - 70px);
 
     overflow-y: auto;
 }
 
 .ms_btn {
+    font-size: 13px;
+    
     background-color: #165bba;
     color: white;
-    font-size: 13px;
+}
+
+.offcanvas.offcanvas-end {
+    width: 100%;
 }
 
 .ms_cards {
-    height: calc(100vh - 190px);
+    height: calc(100vh - 300px);
 }
 
 .ms_code {
@@ -60,5 +70,9 @@ nav {
     
     .ms_scroll{
         width: calc(100vw - 150px);
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 50%;
     }
 }
